@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>RentManagementSystem</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>UserController</servlet-name>
+		<servlet-class>com.ncit.controller.UserController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UserController</servlet-name>
+		<url-pattern>/doLogin</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UserRegisterController</servlet-name>
+		<servlet-class>com.ncit.controller.UserRegisterController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UserRegisterController</servlet-name>
+		<url-pattern>/doRegister</url-pattern>
+	</servlet-mapping>
+
+	<!-- View Users Controllers Mapping -->
+	<servlet>
+		<servlet-name>ViewUsersController</servlet-name>
+		<servlet-class>com.ncit.controller.ViewUsersController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ViewUsersController</servlet-name>
+		<url-pattern>/allUsers</url-pattern>
+	</servlet-mapping>
+
+	<!-- Edit User Controller Mapping -->
+	<servlet>
+		<servlet-name>EditUserController</servlet-name>
+		<servlet-class>com.ncit.controller.EditUserController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EditUserController</servlet-name>
+		<url-pattern>/doEdit</url-pattern>
+	</servlet-mapping>
+
+	<!-- Update User Controller Mapping -->
+	<servlet>
+		<servlet-name>UpdateUserController</servlet-name>
+		<servlet-class>com.ncit.controller.UpdateUserController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UpdateUserController</servlet-name>
+		<url-pattern>/doUpdate</url-pattern>
+	</servlet-mapping>
+
+	<!-- Delete User Controller Mapping -->
+	<servlet>
+		<servlet-name>DeleteUserController</servlet-name>
+		<servlet-class>com.ncit.controller.DeleteUserController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DeleteUserController</servlet-name>
+		<url-pattern>/doDelete</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>

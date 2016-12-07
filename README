@@ -1,0 +1,18 @@
+College: Nepal College of Information Technology(NCIT)
+
+BE.Computer(6th semester) Elective Subject: Advance Java
+
+Dynamic Web Project : RentManagementSystem
+
+IDE Used : Java EE-Eclipse
+Back-End: Xampp, Apache Tomcat v7.0 Server
+Library: javax.servlet-api-4.0.0-b01.jar  ,  mysql-connector-java-5.1.38.jar
+
+Project Contents:
+1.Login Page,
+2.Home Page,
+3.Register Page,
+4.View Users Page,
+5.Edit User / Delete User.(Edited User can be updated using update button)
+6.Simple CSS design files.
+
